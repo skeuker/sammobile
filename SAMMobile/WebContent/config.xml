@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+	id="apps.blueware.co.za/SAMMobile" version="0.5.6">
+
+	<name short="SAM Mobile">SAMMobile</name>
+
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+	
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
+
+	<preference name="permissions" value="none" />
+	
+	<preference name="exit-on-suspend" value="true" />
+	
+	<preference name="StatusBarOverlaysWebView" value="false" />
+	
+	<description>
+		SAMMobile brings your company's Software Development Lifecycle (SDLC) to your mobile device. It makes otherwise tedious tasks like progress feedback and time sheet capture a lot more convenient for you.
+		Note: This application requires a connection to a SAM application server.		
+	</description>
+
+	<author href="http://www.blueware.co.za/" email="info@blueware.co.za">BlueWare Software Solutions</author>
+	
+	//icons
+	<icon src="IconiOS57x57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="IconiOS72x72.png" gap:platform="ios" width="72" height="72" /> 
+	<icon src="IconiOS76x76.png" gap:platform="ios" width="76" height="76" /> 
+	<icon src="IconiOS120x120.png" gap:platform="ios" width="120" height="120" />
+	<icon src="IconiOS152x152.png" gap:platform="ios" width="152" height="152" />
+	<icon src="IconiOS1024x1024.png" gap:platform="ios" />
+	<icon src="IconAndroid1024x1024.png" gap:platform="android" />
+	<icon src="IconWP1024x1024.png" gap:platform="winphone" />
+	
+	//splash screen
+	<gap:splash src="IconiOS1024x1024.png" gap:platform="ios"/>
+	<gap:splash src="IconiOS1024x1024.png" gap:platform="android"/>
+	<gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="320"  height="480"  />
+    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="640"  height="960"  />
+    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="640"  height="1136" />
+    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="1024" height="748"  />
+    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="768"  height="1004" />
+    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="1536" height="2008" />
+    <gap:splash src="SplashScreenImage.jpg" gap:platform="winphone" />
+	
+	<license>
+		The software is provided "as is", without warranty of any kind, express
+		or implied, including but not limited to the warranties of
+		merchantability, fitness for a particular purpose and noninfringement. 
+		In no event shall the authors of copyright holders be liable for any claim, 
+		damages or other liability, whether in an action of contract, insult or otherwise,
+		arising from, out of or in connnection with the software or the use or other dealings
+		in the software.
+	</license>
+
+</widget>
