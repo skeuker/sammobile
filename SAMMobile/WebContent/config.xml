@@ -9,12 +9,15 @@
 	<gap:platform name="winphone" />
 	
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
 
 	<preference name="permissions" value="none" />
-	
 	<preference name="exit-on-suspend" value="true" />
-	
 	<preference name="StatusBarOverlaysWebView" value="false" />
+		
+	<allow-navigation href="*" />
+    <allow-intent href="*" />
+	<access origin="*" />
 	
 	<description>
 		SAMMobile brings your company's Software Development Lifecycle (SDLC) to your mobile device. It makes otherwise tedious tasks like progress feedback and time sheet capture a lot more convenient for you.
