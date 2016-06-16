@@ -76,6 +76,9 @@ sap.ui.controller("sammobile.Logon", {
 		
 	//do logon to backend
 	doLogon : function(oEvent){
+		
+		//debug
+		sap.m.MessageToast.show("entered doLogon method"); 
 
 		//get access to local storage 
 		jQuery.sap.require("jquery.sap.storage");
@@ -109,6 +112,9 @@ sap.ui.controller("sammobile.Logon", {
 			mRequestHeader["sap-client"] = oLocalStorage.get("AppServerClient");
 		}
 		
+		//debug
+		sap.m.MessageToast.show("now calculating credential hash"); 
+		
 		//Build authorization token based on form input
 		jQuery.sap.registerModulePath('base64', 'base64');
 		jQuery.sap.require("base64");
@@ -124,6 +130,9 @@ sap.ui.controller("sammobile.Logon", {
 		if(nConnectionTimeout == "" || nConnectionTimeout == 0 || nConnectionTimeout == undefined){
 			nConnectionTimeout = 5000;
 		}
+		
+		//debug
+		sap.m.MessageToast.show("now doing ajax call"); 
 
 		//Logon through ajax call
 		$.ajax({
