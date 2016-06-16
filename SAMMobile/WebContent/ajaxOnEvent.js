@@ -14,7 +14,7 @@ $(document).ready(function(){
 		jQuery.sap.require("sap.m.MessageToast");
 		
 		//debug
-		sap.m.MessageToast.show("now in ajax error handler"); 
+	    sap.m.MessageToast.show("Error status is " + request.status); 
 		
 		//get access to local storage 
 		jQuery.sap.require("jquery.sap.storage");
@@ -28,9 +28,6 @@ $(document).ready(function(){
 		       oDialogAjaxError.bOpenIndicator){
 				return;
 			}
-			
-			//debug
-	     	sap.m.MessageToast.show("Error status is " + request.status); 
 			
 			//Skip 404 as it has proven not relevant
 			if(request.status == 404) return;
