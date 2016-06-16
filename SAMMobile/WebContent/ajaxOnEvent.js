@@ -29,6 +29,9 @@ $(document).ready(function(){
 				return;
 			}
 			
+			//debug
+	     	sap.m.MessageToast.show("Error status is " + request.status); 
+			
 			//Skip 404 as it has proven not relevant
 			if(request.status == 404) return;
 			
