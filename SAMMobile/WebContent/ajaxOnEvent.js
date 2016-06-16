@@ -14,7 +14,7 @@ $(document).ready(function(){
 		jQuery.sap.require("sap.m.MessageToast");
 		
 		//debug
-	    sap.m.MessageToast.show("An error has occured. HTTP return code was: " + request.status + " with text: " + request.statusText);
+	    sap.m.MessageToast.show("An error has occured. HTTP return code was: " + request.status + " with text: " + request.statusText); 
 		
 		//get access to local storage 
 		jQuery.sap.require("jquery.sap.storage");
