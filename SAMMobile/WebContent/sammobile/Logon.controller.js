@@ -87,13 +87,13 @@ sap.ui.controller("sammobile.Logon", {
 		   oLocalStorage.get("AppServerProtocol") == undefined){
 			sap.m.MessageToast.show("To log on maintain connection details in settings dialog"); 
 			return;
-		};
+		}
 
 		//user name or password not provided
 		if(oUsernameControl.getValue() == "" || oPasswordControl.getValue() == ""){
 			sap.m.MessageToast.show("To log on enter user name and password");
 			return;
-		};
+		}
 		
 		//send busy dialog
 		sap.ui.controller("sammobile.App").getApp().setBusy(true);
@@ -107,7 +107,7 @@ sap.ui.controller("sammobile.Logon", {
 		//create map to indicate 'sap-client' request header attribute
 		if(oLocalStorage.get("AppServerClient")){
 			mRequestHeader["sap-client"] = oLocalStorage.get("AppServerClient");
-		};
+		}
 		
 		//Build authorization token based on form input
 		jQuery.sap.registerModulePath('base64', 'base64');
@@ -123,7 +123,7 @@ sap.ui.controller("sammobile.Logon", {
 		var nConnectionTimeout = oLocalStorage.get("ConnectionTimeout") * 1000;
 		if(nConnectionTimeout == "" || nConnectionTimeout == 0 || nConnectionTimeout == undefined){
 			nConnectionTimeout = 5000;
-		};
+		}
 
 		//Logon through ajax call
 		$.ajax({

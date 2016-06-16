@@ -97,27 +97,28 @@ sap.ui.controller("sammobile.App", {
 		//To make sure close all open dialogs and pop-overs
 		if(sap.m.InstanceManager.hasOpenDialog()){
 	        sap.m.InstanceManager.closeAllDialogs();
-	    };
+	    }
+	    
 	    if (sap.m.InstanceManager.hasOpenPopover()) {
 	        sap.m.InstanceManager.closeAllPopovers();
-	    };
+	    }
 		
 		//for logon page as navigation target ensure rerendering
 		if (this.app.getPage(data.id) !== null && data.id == "Logon") {
 			var oLogonPage = this.app.getPage("Logon");
             oLogonPage.invalidate();
-        };
+        }
         
         //for calendar day page as navigation target ensure rerendering
 		if (this.app.getPage(data.id) !== null && data.id == "CalendarDay") {
 			var oCalendarDayPage = this.app.getPage("CalendarDay");
             oCalendarDayPage.invalidate();
-        };
+        }
         
 		//lazy load of the requested page where applicable
 		if (this.app.getPage(data.id) === null) {
             this.app.addPage(sap.ui.jsview(data.id, "sammobile." + data.id));
-        };
+        }
 		
 		//navigate to requested page with or without binding context
 		this.app.to(data.id, data);  
@@ -321,7 +322,7 @@ sap.ui.controller("sammobile.App", {
 		//all batches successfully updated
 		if(aErrorResponses.length == 0){
 			sap.m.MessageToast.show("Your changes have been saved");
-		};
+		}
 		
 		//at least one batch gave errors, issue first error
 		if(aErrorResponses.length > 0){
@@ -331,8 +332,8 @@ sap.ui.controller("sammobile.App", {
 			}
 			catch(err){
 				sap.m.MessageToast.show(oError.response.body);
-			};
-		};
+			}
+		}
 		
 		//Refresh model to update UI with current status after batch change
 		oSAMModel = sap.ui.getCore().getModel();
@@ -365,18 +366,18 @@ sap.ui.controller("sammobile.App", {
 		   !oLocalStorage.get("AppServerPort") ||
 		   !oLocalStorage.get("AppServer") ){
 			return;
-		};
+		}
 
 		//build service Url from application settings
 		if(oLocalStorage.get("AppServer") !== "proxy"){
 			var sServiceUrl = oLocalStorage.get("AppServerProtocol") + '://' 
 			+ oLocalStorage.get("AppServer") + ':' 
 			+ oLocalStorage.get("AppServerPort") 
-			+ "/sap/opu/odata/blw/sam_ui5_srv/";
+			+ "/sap/opu/odata/mbsa/odata_srv/";
 		}else{
 			sServiceUrl = oLocalStorage.get("AppServer") 
-			+ "/sap/opu/odata/blw/sam_ui5_srv/";
-		};
+			+ "/sap/opu/odata/mbsa/odata_srv/";
+		}
 
 		//feedback to caller
 		return sServiceUrl;

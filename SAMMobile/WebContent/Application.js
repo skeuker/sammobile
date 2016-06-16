@@ -19,6 +19,6 @@ sap.m.App.extend("Application", { //sap.ui.app.Application.extend
     	//issue message to screen
 		sap.m.MessageToast.show(oEvent.getParameters("message"));
 		
-    },
+    }
     
 });
