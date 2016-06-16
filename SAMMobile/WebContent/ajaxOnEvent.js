@@ -13,6 +13,9 @@ $(document).ready(function(){
 		//load messagetoast
 		jQuery.sap.require("sap.m.MessageToast");
 		
+		//debug
+		sap.m.MessageToast.show("now in ajax error handler"); 
+		
 		//get access to local storage 
 		jQuery.sap.require("jquery.sap.storage");
 		var oLocalStorage = jQuery.sap.storage(jQuery.sap.storage.Type.local);
