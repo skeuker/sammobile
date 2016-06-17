@@ -367,16 +367,36 @@ sap.ui.controller("sammobile.App", {
 		   !oLocalStorage.get("AppServer") ){
 			return;
 		}
+		
+		//decide on namespace to use
+		var sNamespace = oLocalStorage.get("Namespace");
+		if(!sNamespace){
+		 sNamespace = "mbsa";
+		} 
+		
+		//decide on service to use
+		var sService;
+		switch(sNamespace){
+		    case "blw":
+		    	sService = "sam_ui5_srv";
+		    	break;
+		    default:
+		    	sService = "odata_srv";
+		}
 
 		//build service Url from application settings
 		if(oLocalStorage.get("AppServer") !== "proxy"){
 			var sServiceUrl = oLocalStorage.get("AppServerProtocol") + '://' 
 			+ oLocalStorage.get("AppServer") + ':' 
 			+ oLocalStorage.get("AppServerPort") 
-			+ "/sap/opu/odata/mbsa/odata_srv/";
+			+ "/sap/opu/odata/"
+			+ sNamespace + "/"
+			+ sService + "/";
 		}else{
 			sServiceUrl = oLocalStorage.get("AppServer") 
-			+ "/sap/opu/odata/mbsa/odata_srv/";
+			+ "/sap/opu/odata/"
+			+ sNamespace + "/"
+			+ sService + "/";
 		}
 
 		//feedback to caller

@@ -59,7 +59,7 @@ sap.ui.controller("sammobile.Settings", {
 			if(this.getCredentialsChangeMessageTracker() !== false){
 				sap.m.MessageToast.show("For your new credentials to take effect restart the application");
 				this.setCredentialsChangeMessageTracker(false);
-			};
+			}
 			
 		}, oController);
 		oUsernameInputField.setValue(oLocalStorage.get("Username"));
@@ -76,7 +76,7 @@ sap.ui.controller("sammobile.Settings", {
 			if(this.getCredentialsChangeMessageTracker() !== false){
 				sap.m.MessageToast.show("For your new credentials to take effect restart the application");
 				this.setCredentialsChangeMessageTracker(false);
-			};
+			}
 			
 		}, oController);
 		oPasswordInputField.setValue(oLocalStorage.get("Password"));
@@ -130,6 +130,14 @@ sap.ui.controller("sammobile.Settings", {
 			oLocalStorage.put("ConnectionTimeout", oConnectionTimeoutInputField.getValue());
 		});
 		oConnectionTimeoutInputField.setValue(oLocalStorage.get("ConnectionTimeout"));
+		
+		//Construct input field with application setting: namespace
+		var oNamespaceComboBox = new sap.m.ComboBox("Namespace", {
+            items: [ new sap.ui.core.Item({text: "mbsa", key: "mbsa"}), 
+                     new sap.ui.core.Item({text: "blw", key: "blw"}) ],
+			selectionChange:function(oEvent){oLocalStorage.put("Namespace", oNamespaceComboBox.getValue());}
+        });
+		oNamespaceComboBox.setValue(oLocalStorage.get("Namespace"));
 
 		//Construct check box with application setting: Error analysis
 		var oErrorAnalysisCheckbox = new sap.m.CheckBox("ErrorAnalysis");
@@ -165,7 +173,7 @@ sap.ui.controller("sammobile.Settings", {
 					alignItems : sap.m.FlexJustifyContent.End
 				})}));
 
-		};
+		}
 
 		//Setting: Application server name
 		oSettingsList.addItem(new sap.m.InputListItem({
@@ -206,6 +214,16 @@ sap.ui.controller("sammobile.Settings", {
 				items : [ oConnectionTimeoutInputField ],
 				alignItems : sap.m.FlexJustifyContent.End
 			})}));
+			
+		//Setting: Namespace
+		var oNamespaceListItem = new sap.m.InputListItem({
+			label: "Namespace",
+			visible: false,
+			content: new sap.m.VBox({
+				items : [ oNamespaceComboBox ],
+				alignItems : sap.m.FlexJustifyContent.End
+			})});
+		oSettingsList.addItem(oNamespaceListItem);
 
 		//Setting: Error Analysis indicator
 		oSettingsList.addItem(new sap.m.InputListItem({
@@ -227,9 +245,10 @@ sap.ui.controller("sammobile.Settings", {
 			content: oSettingsList
 		});
 		
-		//Footer bar with delete credentials button
+		//delete credentials button
+		var oSettingsPageFooterBar;
 		if(oLocalStorage.get("Username")){ 
-			var oSettingsPageFooterBar = new sap.m.Bar({
+			oSettingsPageFooterBar = new sap.m.Bar({
 				translucent : true, 
 				contentLeft : [new sap.m.Button({text: "Delete credentials", press: function(){
 					oLocalStorage.put("Username", "");
@@ -239,8 +258,16 @@ sap.ui.controller("sammobile.Settings", {
 					oLocalStorage.put("AuthToken", "");
 				}})]
 			});
-			oSettingsPage.setFooter(oSettingsPageFooterBar);	
-		};
+		}
+		
+		//legacy options button
+		oSettingsPageFooterBar = new sap.m.Bar({
+			translucent : true, 
+			contentLeft : [new sap.m.Button({text: "Legacy settings", press: function(){oNamespaceListItem.setVisible(true);}})]
+		});
+
+		//set footer bar
+		oSettingsPage.setFooter(oSettingsPageFooterBar);	
 		
 		//return page
 		return oSettingsPage;

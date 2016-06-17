@@ -20,6 +20,6 @@ sap.ui.jsview("sammobile.Settings", {
 		//Create settings view content
 		return oController.createSettingsViewContent(oController);
 		
-	},
+	}
 	
 });
