@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-	id="apps.rbgapps.com/SAMMobile" version="0.5.6">
+	id="apps.rbgapps.com/SAMMobile" version="0.8.1">
 
 	<name short="SAM Mobile">SAMMobile</name>
 
