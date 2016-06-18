@@ -73,7 +73,6 @@ sap.ui.controller("sammobile.WorkitemList", {
 		return oWorkitemList;
 		
 	},
-	
 
 	//React to workitem list click
 	listItemTriggered : function(oEvent) {
@@ -88,6 +87,6 @@ sap.ui.controller("sammobile.WorkitemList", {
 			}
 		});
 
-	},	
+	}	
 	
 });

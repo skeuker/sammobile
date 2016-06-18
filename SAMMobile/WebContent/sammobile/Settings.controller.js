@@ -101,7 +101,7 @@ sap.ui.controller("sammobile.Settings", {
 		});
 		oServerPortInputField.setValue(oLocalStorage.get("AppServerPort"));
 
-		//Construct input field with application setting: protocol
+		/*Construct input field with application setting: protocol
 		var oServerProtocolInputField = new sap.m.Input("AppServerProtocol", {
 			type: sap.m.InputType.Text, 
 			width : "175px",
@@ -109,7 +109,15 @@ sap.ui.controller("sammobile.Settings", {
 		oServerProtocolInputField.attachLiveChange(oServerProtocolInputField, function(oEvent){
 			oLocalStorage.put("AppServerProtocol", oServerProtocolInputField.getValue());
 		});
-		oServerProtocolInputField.setValue(oLocalStorage.get("AppServerProtocol"));
+		oServerProtocolInputField.setValue(oLocalStorage.get("AppServerProtocol"));*/
+		
+		//Construct input field with application setting: protocol
+		var oAppServerProtocolComboBox = new sap.m.ComboBox("AppServerProtocol", {
+            items: [ new sap.ui.core.Item({text: "https", key: "https"}), 
+                     new sap.ui.core.Item({text: "http", key: "http"}) ],
+			selectionChange:function(oEvent){oLocalStorage.put("AppServerProtocol", oAppServerProtocolComboBox.getValue());}
+        });
+		oAppServerProtocolComboBox.setValue(oLocalStorage.get("AppServerProtocol"));
 
 		//Construct input field with application setting: client
 		var oServerClientInputField = new sap.m.Input("AppServerClient", {
@@ -131,13 +139,13 @@ sap.ui.controller("sammobile.Settings", {
 		});
 		oConnectionTimeoutInputField.setValue(oLocalStorage.get("ConnectionTimeout"));
 		
-		//Construct input field with application setting: namespace
-		var oNamespaceComboBox = new sap.m.ComboBox("Namespace", {
+		//Construct input field with application setting: product
+		var oProductComboBox = new sap.m.ComboBox("Product", {
             items: [ new sap.ui.core.Item({text: "mbsa", key: "mbsa"}), 
                      new sap.ui.core.Item({text: "blw", key: "blw"}) ],
-			selectionChange:function(oEvent){oLocalStorage.put("Namespace", oNamespaceComboBox.getValue());}
+			selectionChange:function(oEvent){oLocalStorage.put("Product", oProductComboBox.getValue());}
         });
-		oNamespaceComboBox.setValue(oLocalStorage.get("Namespace"));
+		oProductComboBox.setValue(oLocalStorage.get("Product"));
 
 		//Construct check box with application setting: Error analysis
 		var oErrorAnalysisCheckbox = new sap.m.CheckBox("ErrorAnalysis");
@@ -195,7 +203,7 @@ sap.ui.controller("sammobile.Settings", {
 		oSettingsList.addItem(new sap.m.InputListItem({
 			label: "Protocol",
 			content: new sap.m.VBox({
-				items : [ oServerProtocolInputField ],
+				items : [ oAppServerProtocolComboBox ],
 				alignItems : sap.m.FlexJustifyContent.End
 			})}));
 
@@ -216,14 +224,14 @@ sap.ui.controller("sammobile.Settings", {
 			})}));
 			
 		//Setting: Namespace
-		var oNamespaceListItem = new sap.m.InputListItem({
-			label: "Namespace",
+		var oProductListItem = new sap.m.InputListItem({
+			label: "Product",
 			visible: false,
 			content: new sap.m.VBox({
-				items : [ oNamespaceComboBox ],
+				items : [ oProductComboBox ],
 				alignItems : sap.m.FlexJustifyContent.End
 			})});
-		oSettingsList.addItem(oNamespaceListItem);
+		oSettingsList.addItem(oProductListItem);
 
 		//Setting: Error Analysis indicator
 		oSettingsList.addItem(new sap.m.InputListItem({
@@ -245,27 +253,25 @@ sap.ui.controller("sammobile.Settings", {
 			content: oSettingsList
 		});
 		
-		//delete credentials button
+		//legacy options button
 		var oSettingsPageFooterBar;
+		oSettingsPageFooterBar = new sap.m.Bar({
+			translucent : true, 
+			contentLeft : [new sap.m.Button({text: "Legacy settings", press: function(){oProductListItem.setVisible(true);}})]
+		});
+		
+		//delete credentials button
 		if(oLocalStorage.get("Username")){ 
-			oSettingsPageFooterBar = new sap.m.Bar({
-				translucent : true, 
-				contentLeft : [new sap.m.Button({text: "Delete credentials", press: function(){
+			oSettingsPageFooterBar.addContentRight( 
+				new sap.m.Button({text: "Delete credentials", press: function(){
 					oLocalStorage.put("Username", "");
 					oUsernameInputField.setValue("");
 					oLocalStorage.put("Password", "");
 					oPasswordInputField.setValue("");
 					oLocalStorage.put("AuthToken", "");
-				}})]
-			});
+				}}));
 		}
 		
-		//legacy options button
-		oSettingsPageFooterBar = new sap.m.Bar({
-			translucent : true, 
-			contentLeft : [new sap.m.Button({text: "Legacy settings", press: function(){oNamespaceListItem.setVisible(true);}})]
-		});
-
 		//set footer bar
 		oSettingsPage.setFooter(oSettingsPageFooterBar);	
 		

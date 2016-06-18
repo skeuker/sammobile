@@ -27,26 +27,24 @@
 	<author href="http://www.rbgapps.com/" email="info@rbgapps.com">RBG Applications</author>
 	
 	//icons
-	<icon src="IconiOS57x57.png" gap:platform="ios" width="57" height="57" />
-	<icon src="IconiOS72x72.png" gap:platform="ios" width="72" height="72" /> 
-	<icon src="IconiOS76x76.png" gap:platform="ios" width="76" height="76" /> 
-	<icon src="IconiOS120x120.png" gap:platform="ios" width="120" height="120" />
-	<icon src="IconiOS152x152.png" gap:platform="ios" width="152" height="152" />
-	<icon src="IconiOS1024x1024.png" gap:platform="ios" />
-	<icon src="IconAndroid1024x1024.png" gap:platform="android" />
-	<icon src="IconWP1024x1024.png" gap:platform="winphone" />
+	<icon src="sammobile57x57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="sammobile72x72.png" gap:platform="ios" width="72" height="72" /> 
+	<icon src="sammobile76x76.png" gap:platform="ios" width="76" height="76" /> 
+	<icon src="sammobile120x120.png" gap:platform="ios" width="120" height="120" />
+	<icon src="sammobile152x152.png" gap:platform="ios" width="152" height="152" />
+	<icon src="sammobile1024x1024.png" gap:platform="ios" />
+	<icon src="sammobile1024x1024.png" gap:platform="android" />
 	
 	//splash screen
-	<gap:splash src="IconiOS1024x1024.png" gap:platform="ios"/>
-	<gap:splash src="IconiOS1024x1024.png" gap:platform="android"/>
-	<gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="320"  height="480"  />
-    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="640"  height="960"  />
-    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="640"  height="1136" />
-    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="1024" height="748"  />
-    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="768"  height="1004" />
-    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="2048" height="1496" />
-    <gap:splash src="IconiOS1024x1024.png" gap:platform="ios" width="1536" height="2008" />
-    <gap:splash src="SplashScreenImage.jpg" gap:platform="winphone" />
+	<gap:splash src="sammobile1024x1024.png" gap:platform="ios"/>
+	<gap:splash src="sammobile1024x1024.png" gap:platform="android"/>
+	<gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="320"  height="480"  />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="640"  height="960"  />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="640"  height="1136" />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="1024" height="748"  />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="768"  height="1004" />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="1536" height="2008" />
 	
 	<license>
 		The software is provided "as is", without warranty of any kind, express
