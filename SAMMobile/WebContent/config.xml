@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-	id="apps.blueware.co.za_SAMMobile" versionCode = "463" version="0.8.1">
+	id="apps.blueware.co.za_SAMMobile" versionCode = "464" version="0.8.1">
 
 	<name short="SAM Mobile">SAMMobile</name>
 
