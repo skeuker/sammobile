@@ -29,7 +29,7 @@ sap.ui.jsview("sammobile.WorkitemDetail", {
  		
  		var oWorkitemDetailFooterBar = new sap.m.Bar({
 			translucent : false, 
-			contentLeft : [new sap.m.Button({text: "Save", press: [oController.submitWorkitemChanges, oController]})]
+			contentMiddle : [new sap.m.Button({text: "Save", press: [oController.submitWorkitemChanges, oController]})]
 		});
  		
  		oWorkitemDetailPage.setFooter(oWorkitemDetailFooterBar);
