@@ -101,7 +101,7 @@ sap.ui.controller("sammobile.WorkitemDetail", {
 								}
 				}),
 				alignItems : sap.m.FlexJustifyContent.End
-				}),
+				})
 			}));
 		
 		//work request scheduled estimated completion date
@@ -182,7 +182,7 @@ sap.ui.controller("sammobile.WorkitemDetail", {
 					}
 			);			
 			
-		};
+		}
 		
 		//set context for relative paths provided in detailList
 		this.detailList.bindElement(oEvent.data.data.context.sPath, {expand: "Workitem_Wrkreq"});
@@ -212,7 +212,7 @@ sap.ui.controller("sammobile.WorkitemDetail", {
 			var oPropertyValue = oOpeneffrtInput.getValue();
 			var oPropertyName = "Openeffrt";			
 			
-		};	
+		}
 		
 		//Check box for development completion selected/ unselected
 		if(sTriggerControl == "DevcompindCheckbox"){
@@ -226,9 +226,9 @@ sap.ui.controller("sammobile.WorkitemDetail", {
 				oPropertyValue = "X";
 			} else {
 				oPropertyValue = " ";
-			};
+			}
 			
-		};
+		}
 		
 		//Date input control for revised estimated completion date
 		if(sTriggerControl == "RevedatcomInput"){
@@ -242,7 +242,7 @@ sap.ui.controller("sammobile.WorkitemDetail", {
 			oPropertyValue = oDateLocalTime;
 			oPropertyName = "Revedatcom";
 			
-		};
+		}
 		
 		//Set workitem property
 		var oSAMModel = sap.ui.getCore().getModel();
@@ -266,7 +266,7 @@ sap.ui.controller("sammobile.WorkitemDetail", {
 		if(!oSAMModel.hasPendingChanges()){
 			sap.m.MessageToast.show("You have not made changes");
 			return;
-		};
+		}
 		
 		//Set application to busy
 		sap.ui.controller("sammobile.App").getApp().setBusy(true);

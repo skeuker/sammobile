@@ -50,10 +50,11 @@ sap.ui.controller("sammobile.TimesheetitemDetail", {
 		oTimesheetitemDetailList.addItem(new sap.m.StandardListItem({title: "Day of work", 
 																	 description: {path : "Workday",
 																		 		   formatter: function(oDate){ 
-																		 			    if(oDate == null){return oDate;};
+																		 			    if(oDate == null){return oDate;}
 																		 				var nUTCTimeOffset = oDate.getTimezoneOffset();
-																		 				var oDateLocalTime = new Date(oDate.getTime() - (nUTCTimeOffset*60*1000));		   
-																		 				return sDate = oCalendarDateFormat.format(oDateLocalTime);
+																		 				var oDateLocalTime = new Date(oDate.getTime() - (nUTCTimeOffset*60*1000));
+																		 				var sDate = oCalendarDateFormat.format(oDateLocalTime);
+																		 				return sDate;
 																		 		   }}})); 
 		
 		//work request title 
@@ -76,18 +77,18 @@ sap.ui.controller("sammobile.TimesheetitemDetail", {
 			})}));
 		
 		//Create slider with 0.5 hour steps for alternate way of time entry
- 		oTimeSlider = new sap.m.Slider({
+ 		var oTimeSlider = new sap.m.Slider({
 								min: 0,
 								max: 10,
 								value : { 
 									path: "Doneeffrt",
 									formatter: function(sValue) {
 										return parseFloat(sValue);
-									},
+									}
 								},
 								change: [this.setDoneeffrtProperty, this],
 								step: 0.5,
-								width: '100%',
+								width: '100%'
 						});
 		
 		//add time slider to list
@@ -105,13 +106,18 @@ sap.ui.controller("sammobile.TimesheetitemDetail", {
  		var oTimesheetitemDetailPage = new sap.m.Page({
  			id : "TimesheetitemDetailPage",
 			title : "SAM Mobile: Time sheet item",
+			showNavButton : true,
+			navButtonType : sap.m.ButtonType.Back,
+			navButtonTap : function(){
+				var bus = sap.ui.getCore().getEventBus();
+				bus.publish("nav", "back");},
 			content: oTimesheetitemDetailList
 		});
  		
  		//
  		var oTimesheetitemDetailFooterBar = new sap.m.Bar({
 			translucent : false, 
-			contentMiddle : [new sap.m.Button({icon: "sap-icon://accept", press: [this.submitTimesheetitemUpdate, this]})]
+			contentMiddle : [new sap.m.Button({text: "Save", press: [this.submitTimesheetitemUpdate, this]})]
 		});
  		
  		//Set page footer

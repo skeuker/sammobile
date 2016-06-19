@@ -369,14 +369,14 @@ sap.ui.controller("sammobile.App", {
 		}
 		
 		//decide on namespace to use
-		var sNamespace = oLocalStorage.get("Namespace");
-		if(!sNamespace){
-		 sNamespace = "mbsa";
+		var sProduct = oLocalStorage.get("Product");
+		if(!sProduct){
+		 sProduct = "mbsa";
 		} 
 		
 		//decide on service to use
 		var sService;
-		switch(sNamespace){
+		switch(sProduct){
 		    case "blw":
 		    	sService = "sam_ui5_srv";
 		    	break;
@@ -390,7 +390,7 @@ sap.ui.controller("sammobile.App", {
 			+ oLocalStorage.get("AppServer") + ':' 
 			+ oLocalStorage.get("AppServerPort") 
 			+ "/sap/opu/odata/"
-			+ sNamespace + "/"
+			+ sProduct + "/"
 			+ sService + "/";
 		}else{
 			sServiceUrl = oLocalStorage.get("AppServer") 
