@@ -1,4 +1,5 @@
 {
+  "SAMMobile/WebContent/config.xml": "1466330949543",
   "SAMMobile/.classpath": "1466015128007",
   "SAMMobile/.project": "1466015127888",
   "SAMMobile/.settings/.jsdtscope": "1466015127968",
@@ -10,9 +11,8 @@
   "SAMMobile/WebContent/ajaxOnEvent.js": "1466095942424",
   "SAMMobile/WebContent/Application.js": "1466069769267",
   "SAMMobile/WebContent/base64.js": "1466015127910",
-  "SAMMobile/WebContent/config.xml": "1466292965445",
   "SAMMobile/WebContent/index.html": "1466015127321",
-  "SAMMobile/WebContent/preview_hidden.html": "1466078366351",
+  "SAMMobile/WebContent/preview_hidden.html": "1466285756083",
   "SAMMobile/WebContent/resources/.theming": "1398263554000",
   "SAMMobile/WebContent/resources/jquery-sap.js": "1416902210000",
   "SAMMobile/WebContent/resources/jquery.sap.act.js": "1416902210000",
