@@ -10,10 +10,12 @@
 	
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
 
 	<preference name="permissions" value="none" />
 	<preference name="exit-on-suspend" value="true" />
 	<preference name="StatusBarOverlaysWebView" value="false" />
+	<preference name="SplashScreen" value="screen"/>
 		
 	<allow-navigation href="*" />
     <allow-intent href="*" />
@@ -27,26 +29,26 @@
 	<author href="http://www.rbgapps.com/" email="info@rbgapps.com">RBG Applications</author>
 	
 	//icons
-	<icon src="sammobile1024x1024.png" />
-	<icon src="sammobile1024x1024.png" platform="ios" />
-	<icon src="sammobile1024x1024.png" platform="android" />
-	<icon src="sammobile57x57.png" platform="ios" width="57" height="57" />
-	<icon src="sammobile72x72.png" platform="ios" width="72" height="72" /> 
-	<icon src="sammobile76x76.png" platform="ios" width="76" height="76" /> 
-	<icon src="sammobile120x120.png" platform="ios" width="120" height="120" />
-	<icon src="sammobile152x152.png" platform="ios" width="152" height="152" />
+	<gap:icon src="sammobile57x57.png" gap:platform="ios" width="57" height="57" />
+	<gap:icon src="sammobile72x72.png" gap:platform="ios" width="72" height="72" /> 
+	<gap:icon src="sammobile76x76.png" gap:platform="ios" width="76" height="76" /> 
+	<gap:icon src="sammobile120x120.png" gap:platform="ios" width="120" height="120" />
+	<gap:icon src="sammobile152x152.png" gap:platform="ios" width="152" height="152" />
+	<gap:icon src="sammobile1024x1024.png" gap:platform="android" />
+	<gap:icon src="sammobile1024x1024.png" gap:platform="ios" />
+	<gap:icon src="sammobile1024x1024.png" />
 
 	//splash screen
-    <splash src="sammobile1024x1024.png" />
-	<splash src="sammobile1024x1024.png" platform="ios"/>
-	<splash src="sammobile1024x1024.png" platform="android"/>
-	<splash src="sammobile1024x1024.png" platform="ios" width="320"  height="480"  />
-    <splash src="sammobile1024x1024.png" platform="ios" width="640"  height="960"  />
-    <splash src="sammobile1024x1024.png" platform="ios" width="640"  height="1136" />
-    <splash src="sammobile1024x1024.png" platform="ios" width="1024" height="748"  />
-    <splash src="sammobile1024x1024.png" platform="ios" width="768"  height="1004" />
-    <splash src="sammobile1024x1024.png" platform="ios" width="2048" height="1496" />
-    <splash src="sammobile1024x1024.png" platform="ios" width="1536" height="2008" />
+	<gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="320"  height="480"  />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="640"  height="960"  />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="640"  height="1136" />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="1024" height="748"  />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="768"  height="1004" />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="2048" height="1496" />
+    <gap:splash src="sammobile1024x1024.png" gap:platform="ios" width="1536" height="2008" />
+	<gap:splash src="sammobile1024x1024.png" gap:platform="android"/>
+	<gap:splash src="sammobile1024x1024.png" gap:platform="ios"/>
+    <gap:splash src="sammobile1024x1024.png" />
 	
 	<license>
 		The software is provided "as is", without warranty of any kind, express

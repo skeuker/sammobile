@@ -10,7 +10,7 @@
   "SAMMobile/WebContent/ajaxOnEvent.js": "1466095942424",
   "SAMMobile/WebContent/Application.js": "1466069769267",
   "SAMMobile/WebContent/base64.js": "1466015127910",
-  "SAMMobile/WebContent/config.xml": "1466332064802",
+  "SAMMobile/WebContent/config.xml": "1466335239621",
   "SAMMobile/WebContent/index.html": "1466015127321",
   "SAMMobile/WebContent/preview_hidden.html": "1466078366351",
   "SAMMobile/WebContent/resources/.theming": "1398263554000",
@@ -1272,7 +1272,7 @@
   "SAMMobile/WebContent/sammobile/Loading.view.js": "1466015127960",
   "SAMMobile/WebContent/sammobile/Logon.controller.js": "1466096027144",
   "SAMMobile/WebContent/sammobile/Logon.view.js": "1466015127949",
-  "SAMMobile/WebContent/sammobile/Settings.controller.js": "1466285725398",
+  "SAMMobile/WebContent/sammobile/Settings.controller.js": "1466333762513",
   "SAMMobile/WebContent/sammobile/Settings.view.js": "1466188238154",
   "SAMMobile/WebContent/sammobile/TimesheetitemDetail.controller.js": "1466333167661",
   "SAMMobile/WebContent/sammobile/TimesheetitemDetail.view.js": "1466015127931",
@@ -1280,7 +1280,6 @@
   "SAMMobile/WebContent/sammobile/WorkitemDetail.view.js": "1466015127962",
   "SAMMobile/WebContent/sammobile/WorkitemList.controller.js": "1466197625603",
   "SAMMobile/WebContent/sammobile/WorkitemList.view.js": "1466015127962",
-  "SAMMobile/WebContent/sammobile1024x1024x.png": "1466331184807",
   "SAMMobile/WebContent/sammobile120x120.png": "1466288884103",
   "SAMMobile/WebContent/sammobile152x152.png": "1466288897899",
   "SAMMobile/WebContent/sammobile57x57.png": "1466288837001",
@@ -1289,5 +1288,6 @@
   "SAMMobile/WebContent/sammobile76x76.png": "1466288870331",
   "SAMMobile/WebContent/SplashScreenImage.jpg": "1466015127949",
   "SAMMobile/WebContent/windowOnError.js": "1466015127182",
-  "SAMMobile/WebContent/windowOnEvent.js": "1466015127933"
+  "SAMMobile/WebContent/windowOnEvent.js": "1466015127933",
+  "SAMMobile/WebContent/sammobile1024x1024.png": "1466331184807"
 }

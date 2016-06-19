@@ -101,16 +101,6 @@ sap.ui.controller("sammobile.Settings", {
 		});
 		oServerPortInputField.setValue(oLocalStorage.get("AppServerPort"));
 
-		/*Construct input field with application setting: protocol
-		var oServerProtocolInputField = new sap.m.Input("AppServerProtocol", {
-			type: sap.m.InputType.Text, 
-			width : "175px",
-			placeholder : "Protocol"});
-		oServerProtocolInputField.attachLiveChange(oServerProtocolInputField, function(oEvent){
-			oLocalStorage.put("AppServerProtocol", oServerProtocolInputField.getValue());
-		});
-		oServerProtocolInputField.setValue(oLocalStorage.get("AppServerProtocol"));*/
-		
 		//Construct input field with application setting: protocol
 		var oAppServerProtocolComboBox = new sap.m.ComboBox("AppServerProtocol", {
             items: [ new sap.ui.core.Item({text: "https", key: "https"}), 
