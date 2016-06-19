@@ -12,7 +12,7 @@
   "SAMMobile/WebContent/base64.js": "1466015127910",
   "SAMMobile/WebContent/config.xml": "1466335950976",
   "SAMMobile/WebContent/index.html": "1466015127321",
-  "SAMMobile/WebContent/preview_hidden.html": "1466078366351",
+  "SAMMobile/WebContent/preview_hidden.html": "1466337566587",
   "SAMMobile/WebContent/resources/.theming": "1398263554000",
   "SAMMobile/WebContent/resources/jquery-sap.js": "1416902210000",
   "SAMMobile/WebContent/resources/jquery.sap.act.js": "1416902210000",
@@ -1280,7 +1280,6 @@
   "SAMMobile/WebContent/sammobile/WorkitemDetail.view.js": "1466337497124",
   "SAMMobile/WebContent/sammobile/WorkitemList.controller.js": "1466197625603",
   "SAMMobile/WebContent/sammobile/WorkitemList.view.js": "1466015127962",
-  "SAMMobile/WebContent/sammobile1024x1024.png": "1466331184807",
   "SAMMobile/WebContent/sammobile120x120.png": "1466288884103",
   "SAMMobile/WebContent/sammobile152x152.png": "1466288897899",
   "SAMMobile/WebContent/sammobile57x57.png": "1466288837001",
@@ -1289,5 +1288,6 @@
   "SAMMobile/WebContent/sammobile76x76.png": "1466288870331",
   "SAMMobile/WebContent/SplashScreenImage.jpg": "1466015127949",
   "SAMMobile/WebContent/windowOnError.js": "1466015127182",
-  "SAMMobile/WebContent/windowOnEvent.js": "1466015127933"
+  "SAMMobile/WebContent/windowOnEvent.js": "1466015127933",
+  "SAMMobile/WebContent/sammobile1024x1024.png": "1466365724391"
 }
