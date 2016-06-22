@@ -42,7 +42,7 @@ sap.ui.controller("sammobile.Settings", {
 	createSettingsViewContent : function(oController) {
 
 		//get access to local storage 
-		jQuery.sap.require("jquery.sap.storage");
+		jQuery.sap.require("jquery.sap.storage"); 
 		var oLocalStorage = jQuery.sap.storage(jQuery.sap.storage.Type.local);
 
 		//Construct list of settings
