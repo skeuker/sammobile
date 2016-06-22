@@ -16,7 +16,7 @@ sap.ui.controller("sammobile.Settings", {
 * (NOT before the first rendering! onInit() is used for that one!).
 * @memberOf sammobile.Settings
 */
-//	onBeforeRendering: function() {
+//	onBeforeRendering: function() { 
 //
 //	},
 
