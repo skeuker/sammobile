@@ -59,7 +59,7 @@ sap.ui.controller("sammobile.Settings", {
 			//deliver credentials change message once only
 			if(this.getCredentialsChangeMessageTracker() !== false){
 				sap.m.MessageToast.show("For your new credentials to take effect restart the application");
-				this.setCredentialsChangeMessageTracker(false);
+				this.setCredentialsChangeMessageTracker(false); 
 			}
 			
 		}, oController);
