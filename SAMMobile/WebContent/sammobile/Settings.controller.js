@@ -7,7 +7,7 @@ sap.ui.controller("sammobile.Settings", {
 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 * @memberOf sammobile.Settings
 */
-  	onInit: function() {
+  	onInit: function() { 
   		
 	},
 
