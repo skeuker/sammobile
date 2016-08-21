@@ -28,6 +28,9 @@
 
 	<author href="http://www.rbgapps.com/" email="info@rbgapps.com">RBG Applications</author>
 	
+	//Phonegap version preference for build	
+	<preference name="phonegap-version" value="cli-6.3.0" />
+	
 	//icons
 	<gap:icon src="sammobile57x57.png" gap:platform="ios" width="57" height="57" />
 	<gap:icon src="sammobile72x72.png" gap:platform="ios" width="72" height="72" /> 
