@@ -17,7 +17,7 @@ sap.ui.controller("sammobile.Logon", {
 	 * (NOT before the first rendering! onInit() is used for that one!).
 	 * @memberOf sammobile.Logon
 	 */
-	onBeforeRendering: function() {
+	onBeforeRendering: function() { 
 		
 	},
 
