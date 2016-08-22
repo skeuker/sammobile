@@ -8,6 +8,7 @@
 	<gap:platform name="android" />
 	<gap:platform name="winphone" />
 	
+    <!-- Allow links to example.com 
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
@@ -20,6 +21,7 @@
 	<allow-navigation href="*" />
     <allow-intent href="*" />
 	<access origin="*" />
+	-->
 	
 	<description>
 		SAMMobile brings your company's Software Development Lifecycle (SDLC) to your mobile device. It makes otherwise tedious tasks like progress feedback and time sheet capture a lot more convenient for you.
