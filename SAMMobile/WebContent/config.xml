@@ -8,9 +8,16 @@
 	<gap:platform name="android" />
 	<gap:platform name="winphone" />
 	
+	<!-- Plugins   -->
+	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
+	<plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+	<plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
+
+	<!--
 	<gap:plugin name="com.phonegap.plugin.statusbar" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
+    -->
 
 	<preference name="permissions" value="none" />
 	<preference name="exit-on-suspend" value="true" />
@@ -28,10 +35,10 @@
 
 	<author href="http://www.rbgapps.com/" email="info@rbgapps.com">RBG Applications</author>
 	
-	//Phonegap version preference for build	
-	<preference name="phonegap-version" value="cli-6.3.0" />
-	
-	//icons
+	<!--Phonegap version preference for build	 -->
+	<preference name="phonegap-version" value="3.7.0" />
+
+	<!--icons -->
 	<gap:icon src="sammobile57x57.png" gap:platform="ios" width="57" height="57" />
 	<gap:icon src="sammobile72x72.png" gap:platform="ios" width="72" height="72" /> 
 	<gap:icon src="sammobile76x76.png" gap:platform="ios" width="76" height="76" /> 
@@ -41,7 +48,7 @@
 	<gap:icon src="sammobile1024x1024icon.png" gap:platform="ios" />
 	<gap:icon src="sammobile1024x1024icon.png" />
 
-	//splash screen
+	<!-- splash screen -->
 	<gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="320"  height="480"  />
     <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="640"  height="960"  />
     <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="640"  height="1136" />
