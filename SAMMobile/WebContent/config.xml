@@ -1,73 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-	id="apps.blueware.co.za_SAMMobile" versionCode = "464" version="0.8.1">
-
+<widget id="apps.blueware.co.za_SAMMobile" version="0.8.1" versionCode="464" xmlns:gap="http://phonegap.com/ns/1.0"
+	xmlns="http://www.w3.org/ns/widgets">
 	<name short="SAM Mobile">SAMMobile</name>
-
-	<gap:platform name="ios" />
-	<gap:platform name="android" />
-	<gap:platform name="winphone" />
-	
 	<!-- Plugins   -->
-	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
-	<plugin name="cordova-plugin-whitelist" spec="1.2.2" />
-	<plugin name="org.apache.cordova.splashscreen" source="pgb" spec="1.0.0" />
-
-	<!--
-	<gap:plugin name="com.phonegap.plugin.statusbar" />
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    -->
-
-	<preference name="permissions" value="none" />
-	<preference name="exit-on-suspend" value="true" />
-	<preference name="StatusBarOverlaysWebView" value="false" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1"/>
+	<plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
+	<plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+	<preference name="permissions" value="none"/>
+	<preference name="exit-on-suspend" value="true"/>
+	<preference name="StatusBarOverlaysWebView" value="false"/>
 	<preference name="SplashScreen" value="screen"/>
-		
-	<allow-navigation href="*" />
-    <allow-intent href="*" />
-	<access origin="*" />
-
+	<allow-navigation href="*"/>
+	<allow-intent href="*"/>
+	<access origin="*"/>
+	<!-- App details -->
 	<description>
-		SAMMobile brings your company's Software Development Lifecycle (SDLC) to your mobile device. It makes otherwise tedious tasks like progress feedback and time sheet capture a lot more convenient for you.
-		Note: This application requires a connection to a SAM application server.		
+		SAMMobile brings your company's Software Development Lifecycle (SDLC) to your mobile device. It makes otherwise tedious tasks like progress
+		feedback and time sheet capture a lot more convenient for you. Note: This application requires a connection to a SAM application server.
 	</description>
-
-	<author href="http://www.rbgapps.com/" email="info@rbgapps.com">RBG Applications</author>
-	
+	<author email="info@rbgapps.com" href="http://www.rbgapps.com/">RBG Applications</author>
 	<!--Phonegap version preference for build	 -->
-	<preference name="phonegap-version" value="3.7.0" />
-
-	<!--icons -->
-	<gap:icon src="sammobile57x57.png" gap:platform="ios" width="57" height="57" />
-	<gap:icon src="sammobile72x72.png" gap:platform="ios" width="72" height="72" /> 
-	<gap:icon src="sammobile76x76.png" gap:platform="ios" width="76" height="76" /> 
-	<gap:icon src="sammobile120x120.png" gap:platform="ios" width="120" height="120" />
-	<gap:icon src="sammobile152x152.png" gap:platform="ios" width="152" height="152" />
-	<gap:icon src="sammobile1024x1024icon.png" gap:platform="android" />
-	<gap:icon src="sammobile1024x1024icon.png" gap:platform="ios" />
-	<gap:icon src="sammobile1024x1024icon.png" />
-
-	<!-- splash screen -->
-	<gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="320"  height="480"  />
-    <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="640"  height="960"  />
-    <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="640"  height="1136" />
-    <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="1024" height="748"  />
-    <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="768"  height="1004" />
-    <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="2048" height="1496" />
-    <gap:splash src="sammobile1024x1024splash.png" gap:platform="ios" width="1536" height="2008" />
-	<gap:splash src="sammobile1024x1024splash.png" gap:platform="android"/>
-	<gap:splash src="sammobile1024x1024splash.png" gap:platform="ios"/>
-    <gap:splash src="sammobile1024x1024splash.png" />
-	
+	<preference name="phonegap-version" value="6.3.0"/>
+	<icon src="sammobile1024x1024icon.png"/>
+	<!--android splash and icons -->
+	<platform name="ios">
+		<icon height="57" src="sammobile57x57.png" width="57"/>
+		<icon height="72" src="sammobile72x72.png" width="72"/>
+		<icon height="76" src="sammobile76x76.png" width="76"/>
+		<icon height="120" src="sammobile120x120.png" width="120"/>
+		<icon height="152" src="sammobile152x152.png" width="152"/>
+		<splash src="sammobile1024x1024splash.png"/>
+		<splash height="480" src="sammobile1024x1024splash.png" width="320"/>
+		<splash height="960" src="sammobile1024x1024splash.png" width="640"/>
+		<splash height="1136" src="sammobile1024x1024splash.png" width="640"/>
+		<splash height="748" src="sammobile1024x1024splash.png" width="1024"/>
+		<splash height="1004" src="sammobile1024x1024splash.png" width="768"/>
+		<splash height="1496" src="sammobile1024x1024splash.png" width="2048"/>
+		<splash height="2008" src="sammobile1024x1024splash.png" width="1536"/>
+	</platform>
+	<!-- android splash and icons -->
+	<platform name="android">
+		<icon src="sammobile1024x1024icon.png"/>
+		<splash src="sammobile1024x1024splash.png"/>
+	</platform>
 	<license>
-		The software is provided "as is", without warranty of any kind, express
-		or implied, including but not limited to the warranties of
-		merchantability, fitness for a particular purpose and noninfringement. 
-		In no event shall the authors of copyright holders be liable for any claim, 
-		damages or other liability, whether in an action of contract, insult or otherwise,
-		arising from, out of or in connnection with the software or the use or other dealings
-		in the software.
+		The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of
+		merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors of copyright holders be liable for any
+		claim, damages or other liability, whether in an action of contract, insult or otherwise, arising from, out of or in connnection with the
+		software or the use or other dealings in the software.
 	</license>
-
 </widget>
