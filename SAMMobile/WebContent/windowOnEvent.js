@@ -34,7 +34,7 @@ function onDeviceReady(){
 	//add hardware key event listeners
     document.addEventListener("backbutton", onBackKeyDown, false);
     document.addEventListener("menubutton", onMenuButtonDown, false);
-    window.StatusBar.overlaysWebView(true);
+    window.StatusBar.overlaysWebView(false);
     
 }
 
