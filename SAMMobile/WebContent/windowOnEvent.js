@@ -15,7 +15,9 @@ function onBackKeyDown(){
 function onMenuButtonDown(){
 	
 	//No further action if application is not logged on
-	if(!sap.ui.controller("sammobile.App").isLoggedOn()) return;
+	if(!sap.ui.controller("sammobile.App").isLoggedOn()){ 
+		return; 
+	}
 	
 	//navigate to the home view for logged on app
 	var bus = sap.ui.getCore().getEventBus();
@@ -32,6 +34,7 @@ function onDeviceReady(){
 	//add hardware key event listeners
     document.addEventListener("backbutton", onBackKeyDown, false);
     document.addEventListener("menubutton", onMenuButtonDown, false);
+    window.StatusBar.overlaysWebView(true);
     
 }
 
