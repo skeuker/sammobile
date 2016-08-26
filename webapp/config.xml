@@ -20,7 +20,15 @@
 	<author email="info@rbgapps.com" href="http://www.rbgapps.com/">RBG Applications</author>
 	<!--Phonegap version preference for build	 -->
 	<preference name="phonegap-version" value="cli-6.3.0"/>
-	<icon src="sammobile1024x1024icon.png"/>
+		
+	<!--splashscreen preferences -->
+	<platform name="browser">
+		<preference name="SplashScreen" value="sammobile1024x1024splash.png"/>
+		<preference name="SplashScreenDelay" value="3000"/>
+		<preference name="SplashScreenBackgroundColor" value="green"/>
+		<preference name="ShowSplashScreen" value="true"/>
+	</platform>
+	
 	<!--android splash and icons -->
 	<platform name="ios">
 		<icon src="sammobile1024x1024icon.png"/>
