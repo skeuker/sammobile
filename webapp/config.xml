@@ -23,6 +23,7 @@
 	<icon src="sammobile1024x1024icon.png"/>
 	<!--android splash and icons -->
 	<platform name="ios">
+		<icon src="sammobile1024x1024icon.png"/>
 		<icon height="57" src="sammobile57x57.png" width="57"/>
 		<icon height="72" src="sammobile72x72.png" width="72"/>
 		<icon height="76" src="sammobile76x76.png" width="76"/>

@@ -35,6 +35,7 @@ function onDeviceReady(){
     document.addEventListener("backbutton", onBackKeyDown, false);
     document.addEventListener("menubutton", onMenuButtonDown, false);
     window.StatusBar.overlaysWebView(false);
+    window.StatusBar.show();
     
 }
 
