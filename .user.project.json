@@ -1,7 +1,7 @@
 {
   "run": [
     {
-      "filePath": "/SAMMobile/WebContent/index.html",
+      "filePath": "/webapp/index.html",
       "previewMode": 1,
       "dataMode": 1,
       "workspace": "withoutWorkspace",
@@ -13,9 +13,9 @@
       "hashParameter": "",
       "backendSystem": [],
       "_metadata": {
-        "runnerId": "webapprunner",
         "id": 327805,
-        "displayName": "Run index.html 1"
+        "runnerId": "webapprunner",
+        "displayName": "index.html"
       }
     }
   ]
