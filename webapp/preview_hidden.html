@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<!-- Meta tag for IE to use latest features -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- Meta tag for correct sizing of the view port in Android -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+	<!-- Instruction for phonegap to include oand mobile device to load  -->
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>  
+
+	<!-- Hardware key event handler -->
+	<script src="windowOnEvent.js"></script>
+	
+<script src='http://localhost:8080/webide/plugins/pluginrepository/hybrid/cordovafacade/cordova.js' data-original-url='index.html'></script>
+<style>#interactive.viewport video{width:320px;height:240px;}
+#interactive.viewport .drawingBuffer{width:320px;height:240px;position:absolute;}</style></head>
+
+<!-- init call subscribes to cordova deviceready event -->
+<body class="sapUiBody" role="application" onLoad="init()">
+
+	<!-- loads cordova js to allow interaction with hardware keys -->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+	<!-- SAP UI5 bootstrap -->
+	<script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+		data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal">
+	</script>
+
+	<!-- ajax Error handler -->
+	<script src="ajaxOnEvent.js"></script>
+	
+	<!-- Java Script error handler -->
+	<script src="windowOnError.js"></script>
+
+	<!-- load SAMMobile application -->
+	<script>
+		sap.ui.localResources("sammobile");
+		jQuery.sap.registerModulePath('ApplicationBase', 'ApplicationBase');
+		jQuery.sap.registerModulePath('Application', 'Application');
+		jQuery.sap.require("Application");
+		var oApp = new Application();
+	</script>
+
+	<!-- HTML5 content of UI5 application -->
+	<div id="content" class="sapUiBody"></div>
+
+</body>
+
+</html>
