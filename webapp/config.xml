@@ -28,15 +28,26 @@
 		<preference name="SplashScreenBackgroundColor" value="green"/>
 		<preference name="ShowSplashScreen" value="true"/>
 	</platform>
+
+	<!--default icon and splash screen -->	
+	<icon src="sammobile1024x1024icon.png"/>
+	<splash src="sammobile1024x1024splash.png"/>
 	
 	<!--android splash and icons -->
 	<platform name="ios">
 		<icon src="sammobile1024x1024icon.png"/>
-		<icon height="57" src="sammobile57x57.png" width="57"/>
-		<icon height="72" src="sammobile72x72.png" width="72"/>
-		<icon height="76" src="sammobile76x76.png" width="76"/>
-		<icon height="120" src="sammobile120x120.png" width="120"/>
-		<icon height="152" src="sammobile152x152.png" width="152"/>
+		<icon height="29" src="sammobile1024x1024icon" width="29"/>
+		<icon height="48" src="sammobile1024x1024icon" width="48"/>
+		<icon height="57" src="sammobile1024x1024icon" width="57"/>
+		<icon height="58" src="sammobile1024x1024icon" width="58"/>
+		<icon height="64" src="sammobile1024x1024icon" width="64"/>
+		<icon height="72" src="sammobile1024x1024icon" width="72"/>
+		<icon height="76" src="sammobile1024x1024icon" width="76"/>
+		<icon height="114" src="sammobile1024x1024icon" width="114"/>
+		<icon height="120" src="sammobile1024x1024icon.png" width="120"/>
+		<icon height="144" src="sammobile1024x1024icon.png" width="144"/>
+		<icon height="152" src="sammobile1024x1024icon" width="152"/>
+		<icon height="1024" src="sammobile1024x1024icon" width="1024"/>
 		<splash src="sammobile1024x1024splash.png"/>
 		<splash height="480" src="sammobile1024x1024splash.png" width="320"/>
 		<splash height="960" src="sammobile1024x1024splash.png" width="640"/>
