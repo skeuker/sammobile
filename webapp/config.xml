@@ -5,9 +5,13 @@
 	<plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1"/>
 	<plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+		
+	<!-- preferences related to plug-ins -->
 	<preference name="permissions" value="none"/>
 	<preference name="exit-on-suspend" value="true"/>
 	<preference name="StatusBarOverlaysWebView" value="false"/>
+	<preference name="SplashScreenDelay" value="3000"/>
+	<preference name="ShowSplashScreen" value="true"/>
 	<allow-navigation href="*"/>
 	<allow-intent href="*"/>
 	<access origin="*"/>
@@ -19,13 +23,6 @@
 	<author email="info@rbgapps.com" href="http://www.rbgapps.com/">RBG Applications</author>
 	<!--Phonegap version preference for build	 -->
 	<preference name="phonegap-version" value="cli-6.3.0"/>
-		
-	<!--splashscreen preferences -->
-	<platform name="browser">
-		<preference name="SplashScreen" value="images/sammobile1024x1024splash.png"/>
-		<preference name="SplashScreenDelay" value="3000"/>
-		<preference name="ShowSplashScreen" value="true"/>
-	</platform>
 
 	<!--default icon and splash screen -->	
 	<icon src="sammobile1024x1024icon.png"/>
