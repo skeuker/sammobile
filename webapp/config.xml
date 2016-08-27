@@ -8,7 +8,6 @@
 	<preference name="permissions" value="none"/>
 	<preference name="exit-on-suspend" value="true"/>
 	<preference name="StatusBarOverlaysWebView" value="false"/>
-	<preference name="SplashScreen" value="images/sammobile1024x1024splash.png"/>
 	<allow-navigation href="*"/>
 	<allow-intent href="*"/>
 	<access origin="*"/>
