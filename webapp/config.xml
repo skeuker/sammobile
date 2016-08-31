@@ -15,6 +15,7 @@
 	<allow-navigation href="*"/>
 	<allow-intent href="*"/>
 	<access origin="*"/>
+		
 	<!-- App details -->
 	<description>
 		SAMMobile brings your company's Software Development Lifecycle (SDLC) to your mobile device. It makes otherwise tedious tasks like progress
