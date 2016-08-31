@@ -1,19 +1,4 @@
 {
-  "images/sammobile1024x1024icon.png": "1466365724391",
-  "images/sammobile1024x1024splash.png": "1466370494706",
-  "images/sammobile114x114.png": "1472245948480",
-  "images/sammobile120x120.png": "1466288884103",
-  "images/sammobile144x144.png": "1472245974683",
-  "images/sammobile152x152.png": "1466288897899",
-  "images/sammobile29x29.png": "1472245853009",
-  "images/sammobile320x480.png": "1472246760913",
-  "images/sammobile48x48.png": "1472245873079",
-  "images/sammobile57x57.png": "1466288837001",
-  "images/sammobile58x58.png": "1472245889941",
-  "images/sammobile64x64.png": "1472245904151",
-  "images/sammobile72x72.png": "1466288853769",
-  "images/sammobile768x1280.png": "1466288921048",
-  "images/sammobile76x76.png": "1466288870331",
   "sammobile64x64.png": "1472312232708",
   "webapp/.classpath": "1466015128007",
   "webapp/.project": "1466015127888",
@@ -1297,5 +1282,9 @@
   "webapp/sammobile/WorkitemList.controller.js": "1466197625603",
   "webapp/sammobile/WorkitemList.view.js": "1466015127962",
   "webapp/windowOnError.js": "1466015127182",
-  "webapp/windowOnEvent.js": "1472241948845"
+  "webapp/windowOnEvent.js": "1472241948845",
+  "images/Android/icon/sammobile1024x1024icon.png": "1466365724391",
+  "images/Android/splash/sammobile1024x1024icon.png": "1466365724391",
+  "images/iOS/icon/sammobile1024x1024icon.png": "1466365724391",
+  "images/iOS/splash/sammobile1024x1024icon.png": "1466365724391"
 }
