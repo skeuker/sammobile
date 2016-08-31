@@ -144,20 +144,22 @@ sap.ui.controller("sammobile.App", {
 					title: "Confirmation dialog",
 					content: [new sap.m.Text({text: "Leave without saving?"})],
 					leftButton: new sap.m.Button({text: "Cancel", type: "Reject", tap: function(){oDialog.close();}}),
-					rightButton: new sap.m.Button({text: "Ok", type: "Accept", tap: function(){oDialogListener.doNavigateBackWithoutSaving(oDialog, oDialogListener);}}),
+					rightButton: new sap.m.Button({text: "Ok", type: "Accept", tap: function(){oDialogListener.doNavigateBackWithoutSaving(oDialog, oDialogListener);}})
 				});
 
 				//send dialog and return
 				oDialog.open();
 				return;
 
-			};
+			}
 
-		};
+		}
 		
 		//Check that back navigation target makes sense (no navigation back to loading view or logon view when logged on)
 		var oPreviousPage = this.app.getPreviousPage();
-		if(oPreviousPage.sId == "Loading" || (oPreviousPage.sId == "Logon" && this.getApp().isLoggedOn)) return;
+		if(oPreviousPage.sId === "Loading" || (oPreviousPage.sId === "Logon" && this.getApp().isLoggedOn)){
+			return;	
+		} 
 		
 		//navigate back
 		this.app.back();

@@ -47,10 +47,17 @@
 		<splash src="images/sammobile1024x1024splash.png" width="320" height="480"/>
 		<splash src="images/sammobile1024x1024splash.png" width="640" height="960"/>
 		<splash src="images/sammobile1024x1024splash.png" width="640" height="1136"/>
+		<splash src="images/sammobile1024x1024splash.png" width="750" height="1334"/>
+        <splash src="images/sammobile1024x1024splash.png" width="768" height="1024"/>
 		<splash src="images/sammobile1024x1024splash.png" width="1024" height="748"/>
 		<splash src="images/sammobile1024x1024splash.png" width="768" height="1004"/>
-		<splash src="images/sammobile1024x1024splash.png" width="2048" height="1496"/>
+		<splash src="images/sammobile1024x1024splash.png" width="1024" height="768"/>
+		<splash src="images/sammobile1024x1024splash.png" width="1242" height="2208"/>
 		<splash src="images/sammobile1024x1024splash.png" width="1536" height="2008"/>
+		<splash src="images/sammobile1024x1024splash.png" width="1536" height="2048"/>
+    	<splash src="images/sammobile1024x1024splash.png" width="2208" height="1242"/>
+		<splash src="images/sammobile1024x1024splash.png" width="2048" height="1496"/>
+		<splash src="images/sammobile1024x1024splash.png" width="2048" height="1536"/>
 	</platform>
 	<!-- android splash and icons -->
 	<platform name="android">
