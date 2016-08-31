@@ -1,4 +1,5 @@
 {
+  "images/iOS/splash/sammobile1024x1024icon.png": "1466365724391",
   "sammobile64x64.png": "1472312232708",
   "webapp/.classpath": "1466015128007",
   "webapp/.project": "1466015127888",
@@ -1283,8 +1284,6 @@
   "webapp/sammobile/WorkitemList.view.js": "1466015127962",
   "webapp/windowOnError.js": "1466015127182",
   "webapp/windowOnEvent.js": "1472241948845",
-  "images/Android/icon/sammobile1024x1024icon.png": "1466365724391",
-  "images/Android/splash/sammobile1024x1024icon.png": "1466365724391",
   "images/iOS/icon/sammobile1024x1024icon.png": "1466365724391",
-  "images/iOS/splash/sammobile1024x1024icon.png": "1466365724391"
+  "images/Android/sammobile1024x1024icon.png": "1466365724391"
 }
