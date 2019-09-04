@@ -23,8 +23,8 @@
 	<!--Phonegap version preference for build	 -->
 	<preference name="phonegap-version" value="cli-9.0.0"/>
 	<!--default icon and splash screen -->
-	<icon src="sammobile1024x1024icon.png"/>
-	<splash src="sammobile1024x1024splash.png"/>
+	<icon src="images/sammobile1024x1024icon.png"/>
+	<splash src="images/sammobile1024x1024splash.png"/>
 	<!--android splash and icons -->
 	<platform name="ios">
 		<icon height="29" src="images/iOS/resources/icons/Icon-29.png" width="29"/>
